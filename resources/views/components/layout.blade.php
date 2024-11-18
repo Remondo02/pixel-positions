@@ -10,7 +10,6 @@
 </head>
 
 <body class="bg-black text-white">
-
     <div class="px-10">
         <nav class="flex justify-between items-center py-4 border-b border-white/10">
             <div>
@@ -18,20 +17,15 @@
                     <img src="{{ Vite::asset('resources/images/logo.svg') }}" alt="">
                 </a>
             </div>
-
             <div class="space-x-6 font-bold"><a href="#">Jobs</a>
                 <a href="#">Carrers</a>
                 <a href="#">Salaries</a>
                 <a href="#">Compagnies</a>
             </div>
-
             <div><a href="">Post a Job</a></div>
-
         </nav>
-
-        <main class="mt-10 max-w-[986px]">{{ $slot }}</main>
+        <main class="mt-10 max-w-[986px] mx-auto">{{ $slot }}</main>
     </div>
-
 </body>
 
 </html>
